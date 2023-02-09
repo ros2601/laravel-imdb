@@ -18,5 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/',"App\Http\controllers\homecontroller@home");
 Route::post('/search',"App\Http\Controllers\searchcontroller@search");
-
-
+Route::get('show/{id}',"App\Http\controllers\searchcontroller@show");
