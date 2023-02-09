@@ -7,7 +7,7 @@
     @for($a=0;$a < 8; $a++)
        
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{$data['d'][$a]['i']['imageUrl']}}" alt="image url broken"  />
+                <a href="{{url('show/'.$data['d'][$a]['id'])}}"> <img class="card-img-top" src="{{$data['d'][$a]['i']['imageUrl']}}"  alt="image url broken"  /></a>
               <div class="card-body">
                 <h5 class="card-title"><b>{{$data['d'][$a]['l']}}</b></h5>
                 <h5 class="card-title"><p>Casts : {{$data['d'][$a]['s']}}</p></h5>
